@@ -17,14 +17,24 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="0" colspan="3">
-       <widget class="QSlider" name="slider1">
+      <item row="2" column="4">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Choose Video 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QSlider" name="volume2">
+        <property name="maximum">
+         <number>100</number>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
-      <item row="2" column="2">
+      <item row="2" column="3">
        <widget class="QSlider" name="volume1">
         <property name="maximum">
          <number>100</number>
@@ -37,22 +47,15 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QLabel" name="label">
+      <item row="2" column="5">
+       <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Lautstärke:</string>
+         <string>Volume:</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="3" colspan="3">
-       <widget class="QSlider" name="slider2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="3">
-       <widget class="QVideoWidget" name="video1" native="true">
+      <item row="0" column="4" colspan="3">
+       <widget class="QVideoWidget" name="video2" native="true">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -61,15 +64,21 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="4">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Lautstärke:</string>
+      <item row="0" column="7">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
         </property>
-       </widget>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
       </item>
-      <item row="0" column="3" colspan="3">
-       <widget class="QVideoWidget" name="video2" native="true">
+      <item row="0" column="0" colspan="4">
+       <widget class="QVideoWidget" name="video1" native="true">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -81,19 +90,22 @@
       <item row="2" column="0">
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>Video 1 wählen</string>
+         <string>Choose Video 1</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="3">
-       <widget class="QPushButton" name="pushButton_2">
+      <item row="2" column="1" colspan="2">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>Video 2 wählen</string>
+         <string>Volume:</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="0" colspan="6">
+      <item row="4" column="0" colspan="7">
        <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="4">
+         <widget class="QLCDNumber" name="total_time2"/>
+        </item>
         <item row="0" column="2">
          <widget class="QLCDNumber" name="total_time1"/>
         </item>
@@ -104,9 +116,6 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="4">
-         <widget class="QLCDNumber" name="total_time2"/>
-        </item>
         <item row="0" column="3">
          <widget class="QLCDNumber" name="current_time2"/>
         </item>
@@ -115,13 +124,45 @@
         </item>
        </layout>
       </item>
-      <item row="2" column="5">
-       <widget class="QSlider" name="volume2">
-        <property name="maximum">
-         <number>100</number>
-        </property>
+      <item row="3" column="6">
+       <widget class="QSlider" name="slider2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QSlider" name="slider1">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Progress:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Progress:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Time Sync</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Time Sync</string>
         </property>
        </widget>
       </item>
@@ -135,7 +176,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDatei">

@@ -39,6 +39,10 @@ private slots:
 
     void on_slider2_sliderMoved(int position);
 
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString total_time1;

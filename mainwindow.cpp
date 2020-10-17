@@ -143,3 +143,15 @@ void MainWindow::on_slider2_sliderMoved(int position)
 {
     player2->setPosition(position);
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    //Time Sync 1
+    player1->setPosition(player2->position());
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    //Time Sync 2
+    player2->setPosition(player1->position());
+}
