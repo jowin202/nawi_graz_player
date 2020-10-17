@@ -94,6 +94,9 @@
       </item>
       <item row="4" column="0" colspan="6">
        <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="2">
+         <widget class="QLCDNumber" name="total_time1"/>
+        </item>
         <item row="1" column="1">
          <widget class="QPushButton" name="button_play_pause">
           <property name="text">
@@ -101,18 +104,14 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="2">
-         <widget class="QPushButton" name="pushButton_4">
-          <property name="text">
-           <string>Stop</string>
-          </property>
-         </widget>
+        <item row="0" column="4">
+         <widget class="QLCDNumber" name="total_time2"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLCDNumber" name="current_time2"/>
         </item>
         <item row="0" column="1">
-         <widget class="QLCDNumber" name="lcd1"/>
-        </item>
-        <item row="0" column="2">
-         <widget class="QLCDNumber" name="lcd2"/>
+         <widget class="QLCDNumber" name="current_time1"/>
         </item>
        </layout>
       </item>
@@ -166,17 +165,17 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionChoose_Video_1">
    <property name="text">
-    <string>Öffne Video 1</string>
+    <string>&amp;Öffne Video 1</string>
    </property>
   </action>
   <action name="action_ffne_Video_2">
    <property name="text">
-    <string>Öffne Video 2</string>
+    <string>Öffne &amp;Video 2</string>
    </property>
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>About</string>
+    <string>&amp;About</string>
    </property>
   </action>
  </widget>

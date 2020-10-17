@@ -6,6 +6,7 @@
 #include <QMainWindow>
 #include <QDebug>
 #include <QTimer>
+#include "aboutdialog.h"
 namespace Ui {
 class MainWindow;
 }
@@ -34,8 +35,14 @@ private slots:
     void player1_seekable_set(qint64 time);
     void player2_seekable_set(qint64 time);
 
+    void on_slider1_sliderMoved(int position);
+
+    void on_slider2_sliderMoved(int position);
+
 private:
     Ui::MainWindow *ui;
+    QString total_time1;
+    QString total_time2;
 };
 
 #endif // MAINWINDOW_H
